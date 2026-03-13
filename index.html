@@ -1,4 +1,24 @@
-: 50px 20px 30px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repayment - Taploan Cashpal </title>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: "serif", "Times New Roman", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+            background: linear-gradient(to bottom, #3b99ff, #d0e8ff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER SECTION */
+        .header {
+            text-align: center;
+            padding: 50px 20px 30px;
             color: white;
         }
 
@@ -169,15 +189,15 @@
 <body>
 
     <div class="header">
-        <div class="company-name">Pay Salary</div>
+        <div class="company-name">cashpal</div>
         <div class="amount-container">
-            <span class="amount" id="amount">400.00</span>
+            <span class="amount" id="amount">60.54</span>
             <svg class="edit-icon" viewBox="0 0 24 24" fill="white"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
         </div>
         <div class="label">Repayment Amount(GHC)</div>
         <div class="overdue-badge">
             <span class="overdue-label">Overdue:</span>
-            <span class="overdue-days">1 days</span>
+            <span class="overdue-days">2 days</span>
         </div>
         <br>
         <button class="extend-btn">Extend your loan</button>
@@ -188,11 +208,11 @@
             <div class="card-title">Loan details</div>
             <div class="row">
                 <span style="color: #666;">Customer</span>
-                <span class="val-bold" id="customer-name">Dorcas Zeba</span>
+                <span class="val-bold" id="customer-name"> Francis ayepa kwofie</span>
             </div>
             <div class="row">
                 <span style="color: #666;">Due Date</span>
-                <span class="val-bold">24/02/2026<span class="overdue-text">(Overdue 1 days)</span></span>
+                <span class="val-bold">11/03/2026<span class="overdue-text">(Overdue 2 days)</span></span>
             </div>
         </div>
 
@@ -225,7 +245,7 @@
 
 <script>
     // 🔴 SETTINGS: Update these values
-    const PAYSTACK_PUBLIC_KEY = "pk_live_286cc49774695e4f691de3d8eab1d44aa191a7ac"; 
+    const PAYSTACK_PUBLIC_KEY = "pk_live_81f40d98ac94ae1b0f27d8d03ba2b9549842194e"; 
     const CUSTOMER_EMAIL = "customer@example.com";
 
     function payWithPaystack() {
